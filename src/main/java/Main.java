@@ -35,6 +35,8 @@ public class Main {
 		
 		if (maPile.est_vide()) System.out.println("NOK");
 
+		System.out.println("Fin des tests");
+
 	}
 }
 
