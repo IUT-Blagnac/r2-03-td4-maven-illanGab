@@ -1,10 +1,15 @@
 /**
- * Ceci est une classe de test qui ne fait pas grand chose
- * @author JMB
- * @author LC
+ * Ceci est une classe permettant d'afficher "Hello Blagnac\nCancan" 
+ * @author ILlan GABARRA 
  */
 class HelloJava {
-	public void afficherCancan(){
-		System.out.println("Hello World");
-	}
+	public static void main(String[] args) {
+	System.out.println("Hello Blagnac");
+	afficherCancan();
 }
+
+public static void afficherCancan(){
+	System.out.println("Cancan");
+}
+}
+
