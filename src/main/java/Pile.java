@@ -1,4 +1,4 @@
-/* Classe permettant d'utliser une Pile d'entiers 
+/** Classe permettant d'utliser une Pile d'entiers 
  *
  * @author Illan GABARRA 1A
  */
@@ -7,7 +7,7 @@ public class Pile {
 	private int[] laPile;
 	private int indiceSommet;
 
-	/*
+	/**
 	 * Conctructeur de la Classe Pile, Permet de créer une pile vide d'entier de taille pfTaille
 	 * 
 	 * @param IN pfTaille : Taille de la pile à créer
@@ -16,7 +16,7 @@ public class Pile {
 		laPile = new int[pfTaille];
 		indiceSommet = -1;
 	}
-	/*
+	/**
 	 * Permet de savoir si la pile est vide
 	 * 
 	 * @return true si vide false sinon
@@ -29,7 +29,7 @@ public class Pile {
 			}
 		return false;
 	}
-	/*
+	/**
 	 * Permet de savoir si la pile est pleine
 	 * 
 	 * @return true si pleine false sinon
@@ -43,7 +43,7 @@ public class Pile {
 		return true;
 	}
 
-	/*
+	/**
 	 * Permet d'enpiler un entier si la pile n'est pas pleine
 	 * 
 	 * @param IN pfEntier : Entier à empiler
@@ -63,12 +63,12 @@ public class Pile {
 			throw new IndexOutOfBoundsException("La pile est pleine");
 		}
 	}
-	/*
+	/**
 	 * Permet de dépiler un entier si la pile n'est pas vide
 	 * 
-	 * @return Entier dépiler
+	 * @return Entier dépilé
 	 * 
-	 * @see Pile#empiler()
+	 * @see Pile#empiler(int)
 	 * @see Pile#est_vide()
 	 * 
 	 * @throws IndexOutOfBoundsException si la pile est vide
@@ -81,7 +81,7 @@ public class Pile {
 		throw new IndexOutOfBoundsException("La pile est vide");
 
 	}
-	/* Permet de récupérer l'entier au sommet de la pile si la pile n'est pas vide
+	/** Permet de récupérer l'entier au sommet de la pile si la pile n'est pas vide
 	 * 
 	 * @return Entier correspondant au dernier élément empiler
 	 * 
@@ -95,7 +95,7 @@ public class Pile {
 		throw new IndexOutOfBoundsException("La pile est vide");
 	}
 
-	/* Permet de vider entièrement la pile
+	/** Permet de vider entièrement la pile
 	 * 
 	 */
 	public void vider () {
@@ -103,14 +103,14 @@ public class Pile {
 			depiler();
 		}
 	}
-	/* Permet d'empiler pfNbFois fois le même pfElement
+	/** Permet d'empiler pfNbFois fois le même pfElement
 	 * 
 	 * @param IN pfNbFois : Nombre d'éléments pfElement à empiler
 	 * @param IN pfElement : Élément à empiler
 	 * 
 	 * @throws IndexOutOfBoundsException si la pile est pleine
 	 * 
-	 * @see Pile#empiler()
+	 * @see Pile#empiler(int)
 	 */
 	public void empilerPlusieursFois(int pfNbFois , int pfElement) throws IndexOutOfBoundsException{
 		for (int i = 0 ; i < pfNbFois | est_vide() ; i++) {
@@ -118,11 +118,11 @@ public class Pile {
 		}
 	}
 	
-	/*
+	/**
 	 * Permet de dupliquer la pile courante en créant une nouvelle pile et en copiant les
 	 * éléments de la pile courante dans la nouvelle pile
 	 * 
-	 * @return Pile pile copiée
+	 * @return La pile copiée
 	 */
 	public Pile dupliquerPile() {
 		

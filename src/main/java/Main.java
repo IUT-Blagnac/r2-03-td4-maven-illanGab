@@ -1,4 +1,4 @@
-/* Classe permettant de tester la classe Pile 
+/** Classe permettant de tester la classe Pile 
  *
  * @author Illan GABARRA 1A
  */
