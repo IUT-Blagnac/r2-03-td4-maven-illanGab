@@ -1,4 +1,7 @@
-
+/* Classe permettant de tester la classe Pile 
+ *
+ * @author Illan GABARRA 1A
+ */
 public class Main {
 	public static void main(String[] args) {
 		
